@@ -16,6 +16,7 @@ buildscript {
 
 allprojects {
     repositories {
+        mavenLocal()
         google()
         jcenter()
     }
@@ -24,3 +25,8 @@ allprojects {
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
+
+task publishDebug() {
+    dependsOn(":lib1:publishDebugPublicationToMavenLocal")
+}
+

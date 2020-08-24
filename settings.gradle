@@ -1,3 +1,3 @@
 include ':lib1'
 include ':sample_app'
-rootProject.name = "My Application"
+rootProject.name = "lib1"
